@@ -46,6 +46,7 @@ class AdjustFrame(Toplevel):
 
     # lưu cấu hình hiện tại
     def apply_button_released(self, event):
+        self.show_button_release(event)
         self.master.processed_image = self.processing_image
         self.close()
 
